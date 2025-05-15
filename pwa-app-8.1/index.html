@@ -4,9 +4,40 @@
     <meta charset="UTF-8" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/pwa-app-8.1/src/assets/react.svg">
     <title>Love-U-Festi</title>
   </head>
   <body>
+
+<!-- moet eigenlijk in app/main.jsx -->
+
+    <style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Toggle Dark/Light Mode</h2>
+<p>Click the button to toggle between dark and light mode for this page.</p>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
