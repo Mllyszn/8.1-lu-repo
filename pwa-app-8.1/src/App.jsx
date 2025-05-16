@@ -14,7 +14,7 @@ function App() {
           <img src={appLogo} className="logo" alt="Love-U-Festi logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
         </a>
       </div>
       <h1>Love-U-Festi</h1>
@@ -29,7 +29,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <PWABadge />
+      {/* <PWABadge /> */}
     </>
   )
 }
