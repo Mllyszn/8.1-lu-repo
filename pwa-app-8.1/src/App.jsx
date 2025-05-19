@@ -1,37 +1,26 @@
 import { useState } from 'react'
+import React from 'react'
 // import reactLogo from './assets/react.svg'
 import appLogo from '/favicon.svg'
 // import PWABadge from './PWABadge.jsx'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const toggleDarkMode = () => {
+    document.body.classList.toggle("dark-mode");
+  };
 
   return (
-    <> 
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={appLogo} className="logo" alt="Love-U-Festi logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
-        </a>
-      </div>
-      <h1>Love-U-Festi</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div className="light-switch">
+      <h2>Toggle Dark/Light Mode</h2>
+      <p>
+        Click the button to toggle between dark and light mode for this page.
       </p>
-      {/* <PWABadge /> */}
-    </>
-  )
+
+      {/* Dark/light mode switch */}
+      <button onClick={toggleDarkMode}>Toggle dark mode</button>
+    </div>
+  );
 }
 
-export default App
+export default App;  
