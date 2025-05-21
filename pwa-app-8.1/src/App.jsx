@@ -1,26 +1,25 @@
-import { useState } from 'react'
-import React from 'react'
-// import reactLogo from './assets/react.svg'
-import appLogo from '/favicon.svg'
-// import PWABadge from './PWABadge.jsx'
-import './App.css'
+import { Routes, Route, Link } from 'react-router-dom'
+
+function Home() {
+  return <h2>Home Page</h2>;
+}
+
+function About() {
+  return <h2>About Page</h2>;
+}
 
 function App() {
-  const toggleDarkMode = () => {
-    document.body.classList.toggle("dark-mode");
-  };
-
   return (
-    <div className="light-switch">
-      <h2>Toggle Dark/Light Mode</h2>
-      <p>
-        Click the button to toggle between dark and light mode for this page.
-      </p>
-
-      {/* Dark/light mode switch */}
-      <button onClick={toggleDarkMode}>Toggle dark mode</button>
+    <div>
+      <nav>
+      <Link to="/">Home</Link> | <Link to="/about">About</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
 
-export default App;  
+export default App;
