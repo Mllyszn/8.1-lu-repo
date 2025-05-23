@@ -19,10 +19,9 @@ function Home() {
         <h2 className="text-xl font-semibold text-blue-700 mb-2">What to Expect</h2>
         <ul className="list-disc pl-5 text-gray-800 space-y-1">
           <li>Live performances from top artists</li>
-          <li>Food trucks & local vendors</li>
-          <li>Workshops and fun activities</li>
-          <li>Family-friendly zones</li>
-          <li>Eco-friendly initiatives</li>
+          <li>Agenda</li>
+          <li>Performing artist</li>
+
         </ul>
       </section>
       <section>
